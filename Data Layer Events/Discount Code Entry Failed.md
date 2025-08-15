@@ -1,0 +1,30 @@
+# Discount Code Entry Failed
+
+### 
+
+## Javascript Code
+```js
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  "event": "coupon_error",
+  "detailed_event": "Discount Code Entry Failed",
+    "ecommerce": {
+        "items": [
+            {
+                "coupon": "<coupon>"
+            }
+        ]
+    }
+});
+```
+
+## Variable Definitions
+
+|Path|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|ecommerce.items[n].coupon|string|Captures the coupon code associated with product level discounts for a transaction. |5OFFSHOES, AKRONCANDLES2019|||||||
+
+
+
+
