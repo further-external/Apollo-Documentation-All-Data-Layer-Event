@@ -10,7 +10,7 @@
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({ event_data: null });  // Clear the previous event_data object.
 dataLayer.push({
-  event: 'previous_carousel_slide',
+  event: 'carousel_slide_previous',
   event_data: {
     identifier: "<identifier>", // REQUIRED | string | ex. 12345abcde12345
     name: "<name>", // recommended | string | ex. Most Popular Blog Posts, 2	
